@@ -1,19 +1,20 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "next.config.js",
-            "use": "@now/next"
-        }
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      },
+      {
+        "src": ".next/**",
+        "use": "@vercel/node"
+      }
     ],
-    "env": {
-        "CLIENT_ID": "TTwmoP1iGLmk2sfBEPnHVN38zVWV9MakOUhWTgW0",
-        "UD_API_KEY": "XrMvWOpiQyrXpakbYrSllz70R5V6EPs66dmk5mhqOf1X56ceqXVAeqlevDtCEBVZm8AdZR06hYwGp3WIrJm88ojN3MbbDBzNTDcWvIwDDhPJt8K978OARD44pEoUcqXc"
-    },
     "routes": [
-        {
-            "src": "/cursos",
-            "dest": "/api/cursos"
-        }
+      {
+        "src": "/api/cursos",
+        "dest": "/api/cursos.js"
+      }
     ]
-}
+  }
+  
