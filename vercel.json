@@ -10,10 +10,10 @@
         "use": "@vercel/node"
       }
     ],
-    "routes": [
+    "rewrites": [
       {
-        "src": "/api/cursos",
-        "dest": "/api/cursos.js"
+        "source": "/cursos",
+        "destination": "/"
       }
     ]
   }
